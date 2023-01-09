@@ -1,6 +1,7 @@
+# importing tkinter
 from tkinter import *
 
-
+# basic configurations
 root = Tk()
 root.title('LEAP_FINDER')
 root.geometry('600x600')
@@ -9,7 +10,7 @@ p1 = PhotoImage(file = 'clipart1007838.png')
 root.iconphoto(False, p1)
 
 
-
+# func that checks it is leap year or not
 def check_leap(year):
     yearlbl.delete(0,END)
     text = ''
@@ -37,11 +38,12 @@ lbl1 = Label(root, text = 'ENTER THE YEAR THAT YOU NEED CHECK LEAP YEAR OR NOT')
 lbl1.config(bg = 'white')
 lbl1.place(relx=0.23,rely=0.3)
 
-
+# gets the year
 yearlbl = Entry(root,width=10,borderwidth=20)
 yearlbl.config(background = "silver", )
 yearlbl.place(relx=0.43,rely=0.4)
 
+# gets input
 check = Button(root, text = 'CHECK', padx = 10,pady = 10, command=lambda :check_leap(int(yearlbl.get())))
 check.place(relx = 0.455,rely = 0.6)
 

@@ -48,5 +48,4 @@ check = Button(root, text = 'CHECK', padx = 10,pady = 10, command=lambda :check_
 check.place(relx = 0.455,rely = 0.6)
 
 
-
 root.mainloop()
